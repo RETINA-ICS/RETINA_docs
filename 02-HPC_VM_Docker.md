@@ -3,9 +3,11 @@
 
 i.e. Understanding the HPC, the RETINA VM and Docker 
 
-## Overall structure:
+## Overall structure
 
 ![](diagrams/transition_pieces.png)
+
+need to fix diagram
 
 ## The HPC (Gruffalo)
 

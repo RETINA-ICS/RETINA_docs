@@ -1,5 +1,4 @@
 introduction-to-retina
-what-is-the-retina-project
 the-architecture-of-the-retina-project
 main-pieces-of-code-that-make-up-the-retina-project
 where-the-code-and-data-live

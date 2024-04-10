@@ -16,7 +16,6 @@ description: "RETINA Documentation"
 **Dynamic monitoring, reporting and verification for implementing negative emission strategies in managed ecosystems (RETINA)**
 
 ![](images/RETINA_architecture_2.png)
-
 ## What is the RETINA project
 
 Goals:
