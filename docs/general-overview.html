@@ -142,7 +142,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="1.1.1" data-path="introduction-to-retina.html"><a href="introduction-to-retina.html#intro-to-the-pieces-of-the-retina-project"><i class="fa fa-check"></i><b>1.1.1</b> Intro to the pieces of the RETINA project</a></li>
 </ul></li>
-<li class="chapter" data-level="1.2" data-path="introduction-to-retina.html"><a href="introduction-to-retina.html#what-are-the-main-pieces-of-code-that-make-up-the-retina-project"><i class="fa fa-check"></i><b>1.2</b> What are the main pieces of code that make up the RETINA project</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction-to-retina.html"><a href="introduction-to-retina.html#main-pieces-of-code-that-make-up-the-retina-project"><i class="fa fa-check"></i><b>1.2</b> Main pieces of CODE that make up the RETINA project</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="general-overview.html"><a href="general-overview.html"><i class="fa fa-check"></i><b>2</b> General overview</a>
 <ul>
@@ -158,10 +158,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.4.1" data-path="general-overview.html"><a href="general-overview.html#pecan"><i class="fa fa-check"></i><b>2.4.1</b> PEcAn</a></li>
 <li class="chapter" data-level="2.4.2" data-path="general-overview.html"><a href="general-overview.html#the-retna-r-package"><i class="fa fa-check"></i><b>2.4.2</b> The RETNA R Package</a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="general-overview.html"><a href="general-overview.html#bety-database"><i class="fa fa-check"></i><b>2.5</b> BETY database</a>
+<li class="chapter" data-level="2.5" data-path="general-overview.html"><a href="general-overview.html#bety-database"><i class="fa fa-check"></i><b>2.5</b> BETY database</a></li>
+<li class="chapter" data-level="2.6" data-path="general-overview.html"><a href="general-overview.html#the-model-docker-containers"><i class="fa fa-check"></i><b>2.6</b> The model Docker containers</a>
 <ul>
-<li class="chapter" data-level="2.5.1" data-path="general-overview.html"><a href="general-overview.html#basgra"><i class="fa fa-check"></i><b>2.5.1</b> BASGRA</a></li>
-<li class="chapter" data-level="2.5.2" data-path="general-overview.html"><a href="general-overview.html#ecosse"><i class="fa fa-check"></i><b>2.5.2</b> ECOSSE</a></li>
+<li class="chapter" data-level="2.6.1" data-path="general-overview.html"><a href="general-overview.html#dndc"><i class="fa fa-check"></i><b>2.6.1</b> DNDC</a></li>
+<li class="chapter" data-level="2.6.2" data-path="general-overview.html"><a href="general-overview.html#basgra"><i class="fa fa-check"></i><b>2.6.2</b> BASGRA</a></li>
+<li class="chapter" data-level="2.6.3" data-path="general-overview.html"><a href="general-overview.html#ecosse"><i class="fa fa-check"></i><b>2.6.3</b> ECOSSE</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="pecan-1.html"><a href="pecan-1.html"><i class="fa fa-check"></i><b>3</b> PEcAn</a>
@@ -226,8 +228,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">2.2</span> Overview of Docker<a href="general-overview.html#overview-of-docker" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><img src="images/introduction-to-docker-4-638.png" /></p>
 <p><img src="images/20240222134606.jpg" /></p>
-<p>Remake with our logos like pecan and rstudio
-<img src="images/20240222135119.png" /></p>
+<p>Remake with our logos like pecan and rstudio:</p>
+<p><img src="images/20240222135119.png" /></p>
 <p><img src="images/20240222134008.png" /></p>
 </div>
 <div id="the-app-side" class="section level2 hasAnchor" number="2.3">
@@ -253,15 +255,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="bety-database" class="section level2 hasAnchor" number="2.5">
 <h2><span class="header-section-number">2.5</span> BETY database<a href="general-overview.html#bety-database" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>and where files are stored on gruffalo / how they are seen on docker:</p>
-<p>![[docker_file_system.png]]
-## The model Docker containers
-(and where the dockerfiles live / setting everything up through pecan)
-### DNDC</p>
-<div id="basgra" class="section level3 hasAnchor" number="2.5.1">
-<h3><span class="header-section-number">2.5.1</span> BASGRA<a href="general-overview.html#basgra" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>![[diagrams/remote_file_system.png]]</p>
 </div>
-<div id="ecosse" class="section level3 hasAnchor" number="2.5.2">
-<h3><span class="header-section-number">2.5.2</span> ECOSSE<a href="general-overview.html#ecosse" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="the-model-docker-containers" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> The model Docker containers<a href="general-overview.html#the-model-docker-containers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>(and where the dockerfiles live / setting everything up through pecan)</p>
+<p>ESPECIALLY REBUILDING DNDC!</p>
+<div id="dndc" class="section level3 hasAnchor" number="2.6.1">
+<h3><span class="header-section-number">2.6.1</span> DNDC<a href="general-overview.html#dndc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="basgra" class="section level3 hasAnchor" number="2.6.2">
+<h3><span class="header-section-number">2.6.2</span> BASGRA<a href="general-overview.html#basgra" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="ecosse" class="section level3 hasAnchor" number="2.6.3">
+<h3><span class="header-section-number">2.6.3</span> ECOSSE<a href="general-overview.html#ecosse" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 
 </div>
 </div>

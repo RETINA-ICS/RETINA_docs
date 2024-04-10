@@ -38,7 +38,7 @@ Remake with our logos like pecan and rstudio:
 
 and where files are stored on gruffalo / how they are seen on docker:
 
-![[diagrams/remote_file_system.png]]
+![](diagrams/remote_file_system.png)
 
 ## The model Docker containers
 (and where the dockerfiles live / setting everything up through pecan)
