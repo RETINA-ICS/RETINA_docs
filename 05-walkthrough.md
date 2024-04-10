@@ -1,15 +1,16 @@
+# Walkthrough running a model
 
-# Running the model 
+## Initializing a run
 
-## Server Side Scripts
+### Server Side Scripts
 
 setupPECAN.R
 
 submitPECAN.R
 
-## Retina side scripts
+### Retina side scripts
 
-# Outputs 
+## Outputs 
 
 All model output is stored in the directory 
 `/mnt/shared/projects/joint/202012_RETINA/pecan/volumes/pecan/pecan/workflows` in the directory associated with its bety database workflow id. This can be found in the retina database and is associatedwith the retina run id. 
