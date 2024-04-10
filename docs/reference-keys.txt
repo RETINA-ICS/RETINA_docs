@@ -16,6 +16,7 @@ the-model-docker-containers
 dndc
 basgra
 ecosse
+the-scary-diagram.
 pecan-1
 what-is-pecan
 version-of-pecan-that-we-are-using
@@ -48,3 +49,5 @@ documents
 spreadsheets
 meeting-notes
 notes-on-ongoing-dndc-solutions-and-the-hpc
+github
+crop-params

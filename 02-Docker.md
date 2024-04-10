@@ -50,3 +50,9 @@ ESPECIALLY REBUILDING DNDC!
 ### BASGRA
 
 ### ECOSSE
+
+# The scary diagram. 
+
+This file was lost and needs to be redone ...
+
+![](diagrams/User_input_diagram-Full Chart.png)
