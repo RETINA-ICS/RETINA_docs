@@ -1,0 +1,13 @@
+--- 
+title: "RETINA Documentation"
+author: "Betsy Cowdery"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook: default
+github-repo: RETINA-ICS/ED.Hydro.Documentation
+url: https\://RETINA-ICS.github.io/RETINA_docs/
+description: "ED Hydro Documentation"
+---
+
