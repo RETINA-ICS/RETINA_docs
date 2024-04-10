@@ -8,9 +8,9 @@ rmd_files: [
   "02-Docker.md",
   "03-pecan.md",
   "04-RETINA_package.md",
-  "05-walkthrough.md",
-  "06-DNDC_documentation.md",
-  "07-Testing_the_workflow.md",
+  "05-Walkthrough.md",
+  "06-Restarts_Logs_and_Errors.md",
+  "07-DNDC_documentation.md",
   "08-Google_Docs.md",
   "Meeting_Notes.md", 
   "RETINA_exe.md"
