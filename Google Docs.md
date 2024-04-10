@@ -19,4 +19,3 @@ Spreadsheets
 - [MIDDLE_EAST - Google Sheets](https://docs.google.com/spreadsheets/d/1o0jyahu49btRfEHxrNSEpFmOHK8r8t56LAw7K5s-wTg/edit#gid=1659476426)
 - [RETINA Parameters - Google Sheets](https://docs.google.com/spreadsheets/d/1OY6BOUR8EOkq3uJZM3RJYHp7Esj0MliW186Kk1iqfKU/edit#gid=0)
 - [DNDC_Crop_Parameters - Google Sheets](https://docs.google.com/spreadsheets/d/1G5gd7zOEtgh8Q1H2qomFb2w7U6OKf5LBLqylprycxpU/edit#gid=0)
--
