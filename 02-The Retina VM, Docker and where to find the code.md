@@ -1,7 +1,7 @@
 
 # General overview
 
-![[transition_pieces.png]]
+![](diagrams/transition_pieces.png)
 
 ## Where is the Retina VM (and getting there from gruffalo)
 ## Overview of Docker
