@@ -13,7 +13,8 @@
 
 ![](images/20240222134606.jpg)
 
-Remake with our logos like pecan and rstudio
+Remake with our logos like pecan and rstudio:
+
 ![](images/20240222135119.png)
 
 
@@ -37,9 +38,13 @@ Remake with our logos like pecan and rstudio
 
 and where files are stored on gruffalo / how they are seen on docker:
 
-![[docker_file_system.png]]
+![[diagrams/remote_file_system.png]]
+
 ## The model Docker containers
 (and where the dockerfiles live / setting everything up through pecan)
+
+ESPECIALLY REBUILDING DNDC!
+
 ### DNDC
 
 ### BASGRA
