@@ -13,7 +13,7 @@ Link to our version of pecan on [github](https://github.com/RETINA-ICS/pecan_pri
 
 ## Packages
 
-The main packages that we have contribritued to/used during the RETINA project include 
+The main packages that we have contributed to/used during the RETINA project include 
 
 - Base PEcAn settings packages (which we won't talk about here)
 
@@ -26,3 +26,4 @@ The main packages that we have contribritued to/used during the RETINA project i
     - `PEcAn::ECOSSE`: for interfacing with the ECOSSE model
 
 - Functions we have added to the `rpecanapi`
+   - do need to document this.

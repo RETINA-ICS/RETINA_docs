@@ -1,15 +1,23 @@
 
-# General overview
+# Where the code and data live
+
+i.e. Understanding the HPC, the RETINA VM and Docker 
+
+## Overall structure:
 
 ![](diagrams/transition_pieces.png)
 
+## The HPC (Gruffalo)
 
+- [HPC documentation](https://help.cropdiversity.ac.uk/)
 
-## Where is the Retina VM (and getting there from gruffalo)
-## Overview of Docker
+## The Retina VM (and getting there from gruffalo)
+
+- What is available on the VM vs gruffalo 
+
+## Overview of Docker container
 
 ![](images/introduction-to-docker-4-638.png)
-
 
 ![](images/20240222134606.jpg)
 
@@ -17,24 +25,26 @@ Remake with our logos like pecan and rstudio:
 
 ![](images/20240222135119.png)
 
-
 ![](images/20240222134008.png)
 
 
-## The app side
 
-### The app docker, php code and API
-### The app user database
+## The RETINA app Docker container
 
-## The PEcAn Docker
+### php code 
+### API
+
+this might not be the right place to talk about the API ...
+
+## The RETINA app user database Docker container
+
+## The PEcAn Docker container
 
 ### PEcAn 
 
-### The RETNA R Package
-(which currently lives on local storage)
-## RStudio server
+## The RStudio server Docker container
 
-## BETY database
+## The BETY database Docker container
 
 and where files are stored on gruffalo / how they are seen on docker:
 

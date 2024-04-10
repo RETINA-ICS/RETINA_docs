@@ -1,3 +1,5 @@
+# Restarting Docker
+
 If changes are made to any RETINA functions (ie plotting) docker needs to be restarted
 
 go to the docker container
@@ -22,7 +24,7 @@ Version 1_0
 <https://retina.hutton.ac.uk/retinaApp_activity_RunModel_Android_v1_0.php?getKey=CQHXu2H4S31dXt9VqWXd&userName=retinaTesting@hutton.ac.uk&userPass=kjasdf83AJNCTO039AA&toid=osgb1000000175422042>
 ```
 
-
+# Logs and Errors
 
 Look at logs and errors
 
