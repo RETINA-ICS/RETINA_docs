@@ -3,11 +3,10 @@
 
 ![](diagrams/transition_pieces.png)
 
+
+
 ## Where is the Retina VM (and getting there from gruffalo)
 ## Overview of Docker
-
-
-
 
 ![](images/introduction-to-docker-4-638.png)
 
