@@ -49,5 +49,3 @@ documents
 spreadsheets
 meeting-notes
 notes-on-ongoing-dndc-solutions-and-the-hpc
-github
-crop-params

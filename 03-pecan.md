@@ -2,11 +2,14 @@
 
 ## What is PEcAn? 
 
-Link to PEcAn general documentation. 
+![](images/pecan_structure.png)
+
+[PEcAn general documentation](https://pecanproject.github.io/pecan-documentation/master/index.html)
+
 
 ## Version of PEcAn that we are using
 
-Link to our version of pecan on github
+Link to our version of pecan on [github](https://github.com/RETINA-ICS/pecan_private) (Note:this is a private repository.)
 
 ## Packages
 

@@ -2,9 +2,10 @@
 title: RETINA Documentation
 ---
 
+
 # Introduction to RETINA
 
-Dynamic monitoring, reporting and verification for implementing negative emission strategies in managed ecosystems (RETINA)
+**Dynamic monitoring, reporting and verification for implementing negative emission strategies in managed ecosystems (RETINA)**
 
 ## What is the RETINA project
 
