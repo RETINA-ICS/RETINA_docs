@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 General overview | DNDC Documentation</title>
+  <title>9 Meeting Notes | DNDC Documentation</title>
   <meta name="description" content="ED Hydro Documentation" />
   <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 General overview | DNDC Documentation" />
+  <meta property="og:title" content="9 Meeting Notes | DNDC Documentation" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="ED Hydro Documentation" />
   <meta name="github-repo" content="RETINA-ICS/ED.Hydro.Documentation" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 General overview | DNDC Documentation" />
+  <meta name="twitter:title" content="9 Meeting Notes | DNDC Documentation" />
   
   <meta name="twitter:description" content="ED Hydro Documentation" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="introduction-to-retina.html"/>
-<link rel="next" href="pecan-1.html"/>
+<link rel="prev" href="info-still-in-google-drive.html"/>
+<link rel="next" href="notes-on-ongoing-dndc-solutions-and-the-hpc.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -216,63 +216,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="general-overview" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">2</span> General overview<a href="general-overview.html#general-overview" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="diagrams/transition_pieces.png" /></p>
-<div id="where-is-the-retina-vm-and-getting-there-from-gruffalo" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Where is the Retina VM (and getting there from gruffalo)<a href="general-overview.html#where-is-the-retina-vm-and-getting-there-from-gruffalo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-</div>
-<div id="overview-of-docker" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Overview of Docker<a href="general-overview.html#overview-of-docker" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><img src="images/introduction-to-docker-4-638.png" /></p>
-<p><img src="images/20240222134606.jpg" /></p>
-<p>Remake with our logos like pecan and rstudio
-<img src="images/20240222135119.png" /></p>
-<p><img src="images/20240222134008.png" /></p>
-</div>
-<div id="the-app-side" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> The app side<a href="general-overview.html#the-app-side" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="the-app-docker-php-code-and-api" class="section level3 hasAnchor" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> The app docker, php code and API<a href="general-overview.html#the-app-docker-php-code-and-api" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="the-app-user-database" class="section level3 hasAnchor" number="2.3.2">
-<h3><span class="header-section-number">2.3.2</span> The app user database<a href="general-overview.html#the-app-user-database" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-</div>
-<div id="the-pecan-docker" class="section level2 hasAnchor" number="2.4">
-<h2><span class="header-section-number">2.4</span> The PEcAn Docker<a href="general-overview.html#the-pecan-docker" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="pecan" class="section level3 hasAnchor" number="2.4.1">
-<h3><span class="header-section-number">2.4.1</span> PEcAn<a href="general-overview.html#pecan" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="the-retna-r-package" class="section level3 hasAnchor" number="2.4.2">
-<h3><span class="header-section-number">2.4.2</span> The RETNA R Package<a href="general-overview.html#the-retna-r-package" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>(which currently lives on local storage)
-## RStudio server</p>
-</div>
-</div>
-<div id="bety-database" class="section level2 hasAnchor" number="2.5">
-<h2><span class="header-section-number">2.5</span> BETY database<a href="general-overview.html#bety-database" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>and where files are stored on gruffalo / how they are seen on docker:</p>
-<p>![[docker_file_system.png]]
-## The model Docker containers
-(and where the dockerfiles live / setting everything up through pecan)
-### DNDC</p>
-<div id="basgra" class="section level3 hasAnchor" number="2.5.1">
-<h3><span class="header-section-number">2.5.1</span> BASGRA<a href="general-overview.html#basgra" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="ecosse" class="section level3 hasAnchor" number="2.5.2">
-<h3><span class="header-section-number">2.5.2</span> ECOSSE<a href="general-overview.html#ecosse" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="meeting-notes" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">9</span> Meeting Notes<a href="meeting-notes.html#meeting-notes" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ul>
+<li><p>Home of the project</p></li>
+<li><p>/mnt/shared/projects/joint/202012_RETINA/pecan/</p></li>
+<li><p><code>cd</code> to go to a new directory</p></li>
+<li><p>crtl + l clear the screen</p>
+<ul>
+<li>Tip: record a new macro and to use it crtl + space</li>
+</ul></li>
+<li><p>Main directory where work lives (scripts, data, etc)
+<code>/mnt/shared/projects/joint/202012_RETINA/pecan/volumes/pecan/pecan</code></p></li>
+<li><p>workflows</p></li>
+<li><p>test_API</p></li>
+<li><p>dbfiles</p></li>
+<li><p>RETINA</p></li>
+<li><p>test_plots</p></li>
+<li><p>Inside rstudio on docker
+-<code>/mnt/shared/projects/joint/202012_RETINA/pecan/volumes/pecan/pecan</code> shortened to <code>/data</code></p></li>
+</ul>
+<p>Portforwarding from Iain:</p>
+<p>ssh -L 8000:localhost:8000 -J <a href="mailto:ecowdery@gruffalo.cropdiversity.ac.uk" class="email">ecowdery@gruffalo.cropdiversity.ac.uk</a> <a href="mailto:ecowdery@retina" class="email">ecowdery@retina</a>
+ssh -L 8000:retina:8000 <a href="mailto:ejones@gruffalo.cropdiversity.ac.uk" class="email">ejones@gruffalo.cropdiversity.ac.uk</a></p>
+<p>ssh -L 8000:localhost:8000 -J <a href="mailto:ejones@gruffalo.cropdiversity.ac.uk" class="email">ejones@gruffalo.cropdiversity.ac.uk</a> <a href="mailto:ejones@retina" class="email">ejones@retina</a></p>
 
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="introduction-to-retina.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="pecan-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="info-still-in-google-drive.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="notes-on-ongoing-dndc-solutions-and-the-hpc.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

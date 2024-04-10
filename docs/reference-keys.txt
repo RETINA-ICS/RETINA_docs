@@ -41,3 +41,8 @@ pre-made-dnd-files-for-the-retina-project
 balruddery-conventional-treatment
 balruddery-sustainable-treatment
 glensaugh
+info-still-in-google-drive
+documents
+spreadsheets
+meeting-notes
+notes-on-ongoing-dndc-solutions-and-the-hpc

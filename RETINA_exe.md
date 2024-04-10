@@ -1,3 +1,5 @@
+# Notes on ongoing DNDC solutions and the HPC
+
 - RETINA solution (Bhaskar \& Priscila): 
 	- Ask for non-GUI, linux compilers
 	- Ideally source code

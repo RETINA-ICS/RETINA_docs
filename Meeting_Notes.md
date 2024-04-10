@@ -1,3 +1,5 @@
+# Meeting Notes
+
 - Home of the project 
 - /mnt/shared/projects/joint/202012_RETINA/pecan/
 - `cd` to go to a new directory
