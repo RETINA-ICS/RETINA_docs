@@ -1,15 +1,13 @@
 
 Documents 
+
 - [submitPEcAn - Google Docs](https://docs.google.com/document/d/16AUeRe-CEZbQICivYZnKnluAqJ1gRqxzIVecMO-5xzQ/edit)
 - [App run notes - Google Docs](https://docs.google.com/document/d/1yh2tYjXjzYdPHhQ3S380kVUsWwXMNc6yKem_LnnaDnU/edit)
 - [RETINA Plans - Google Docs](https://docs.google.com/document/d/1uxzFWZDImBiTvgKQBTSYck0lRNFZF5M5JRl2nrSzTwU/edit#heading=h.mcboaya3qzrp)
 - [Automate crop and management pipeline from app to models - Google Docs](https://docs.google.com/document/d/1PFfnSEc1JpMBQ2MUik53msjgfGLAkjfvX2Whp59ubKI/edit)
-- RETINA WG3 priorities - Google Docs 
-	- https://docs.google.com/document/d/1hILJitsoE5NK6JEPiK1DA5gSDKZiVi2hp_CvUs-PJWU/edit
-- Untitled document - Google Docs
-	- https://docs.google.com/document/d/1FcwXeGAgW82qOOPQKUoiq8aHf4t9cJSuXNFwbwmkRsU/edit
-- TOID connection with pecan - Google Docs
-	- https://docs.google.com/document/d/1v9jc8RGmmRrM3w293gi2OUb5CWPuaAY6SXk53zWTYr4/edit
+- [RETINA WG3 priorities - Google Docs](https://docs.google.com/document/d/1hILJitsoE5NK6JEPiK1DA5gSDKZiVi2hp_CvUs-PJWU/edit)
+- [Untitled document - Google Docs](https://docs.google.com/document/d/1FcwXeGAgW82qOOPQKUoiq8aHf4t9cJSuXNFwbwmkRsU/edit)
+- [TOID connection with pecan - Google Docs](https://docs.google.com/document/d/1v9jc8RGmmRrM3w293gi2OUb5CWPuaAY6SXk53zWTYr4/edit)
 
 Spreadsheets
 

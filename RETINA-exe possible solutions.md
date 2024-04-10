@@ -1,4 +1,4 @@
-- RETINA solution (Bhaskar & Priscila): 
+- RETINA solution (Bhaskar \& Priscila): 
 	- Ask for non-GUI, linux compilers
 	- Ideally source code
 - Linux VM (Betsy):
