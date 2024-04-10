@@ -1,0 +1,199 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={RETINA Documentation},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{RETINA Documentation}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{RETINA Documentation}\label{retina-documentation}
+
+\subsection{What is the RETINA
+project}\label{what-is-the-retina-project}
+
+\subsubsection{Intro to the pieces of the RETINA
+project}\label{intro-to-the-pieces-of-the-retina-project}
+
+\subsection{What are the main pieces of code that make up the RETINA
+project}\label{what-are-the-main-pieces-of-code-that-make-up-the-retina-project}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The RETINA app
+
+  \begin{itemize}
+  \tightlist
+  \item
+    primarily php code
+  \item
+    collects the data from the user
+  \item
+    shows sensor data to the user
+  \item
+    shows model run results to the user
+  \end{itemize}
+\item
+  The RETINA database
+
+  \begin{itemize}
+  \tightlist
+  \item
+    PSQL \textbf{data catalogue} dedicated to storing RETINA project
+    specific information such
+
+    \begin{itemize}
+    \tightlist
+    \item
+      as user login information
+    \item
+      site details
+    \item
+      site management
+    \item
+      records of model runs triggered through the RETINA app
+    \end{itemize}
+  \item
+    The data in the RETINA database is supposed to be separate from the
+    BETY database (described below.)
+  \end{itemize}
+\item
+  The PECAN code
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A bundle of R packages that handle
+
+    \begin{itemize}
+    \tightlist
+    \item
+      processing and preparing the data collected from the app and other
+      sources to
+
+      \begin{itemize}
+      \tightlist
+      \item
+        use it as model inputs or
+      \item
+        compare with model outputs
+      \end{itemize}
+    \item
+      reading model outputs and preparing them for visualizations,
+      comparison with collected data and further analysis
+    \end{itemize}
+  \item
+    For each model that is used in the RETINA project, there is a
+    specific R PEcAn package that contains (at minimum)
+
+    \begin{itemize}
+    \tightlist
+    \item
+      script for preparing climate data for the model
+    \item
+      script(s) for preparing configuration (i.e.~parameterization)
+      files for the model
+    \item
+      script to execute the model
+    \item
+      script to read the output of the model and translate it from model
+      specific format in to a standardized format so that it can be
+      easily comparible with other model outputs
+    \end{itemize}
+  \end{itemize}
+\item
+  The RETINA R package
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A series of helper scripts written in R that are specific to the
+    RETINA project and JHI and thus shouldn't be merged back in with the
+    pecan project
+  \item
+    These scripts complement the tasks listed more generally with the
+    PECAN code.
+  \end{itemize}
+\item
+  The BETY database
+
+  \begin{itemize}
+  \tightlist
+  \item
+    PSQL database.
+  \item
+    While BETY does house some data, it is better to think of it as a
+    \textbf{metadatabase} that primarily holds information on the
+    location and format of data
+  \item
+    The BETY database is used to track the full provinance of all data
+    used when a model run is generated by the RETINA app including:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      records of all raw data and processed data used for drivers,
+      parameterization and benchmarking (for every step of processing)
+    \item
+      records of run settings and model specific parameterization for
+      model runs
+    \item
+      records of model run status and output files
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+\end{document}
