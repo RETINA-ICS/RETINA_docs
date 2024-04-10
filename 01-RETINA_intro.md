@@ -1,16 +1,4 @@
-# Introduction to RETINA
-
-**Dynamic monitoring, reporting and verification for implementing negative emission strategies in managed ecosystems (RETINA)**
-
-## What is the RETINA project
-
-Goals:
-
-- Bring together biogeochemical models and MRV system to improve predictions of soil C, N and GHG emissions in agricultural systems.
-
-- Inform landowners when making management decisions.
-
-### Intro to the pieces of the RETINA project
+# The architecture of the RETINA project
 
 ![](images/RETINA_architecture.png)
 

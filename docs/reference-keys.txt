@@ -1,7 +1,6 @@
-github
 introduction-to-retina
 what-is-the-retina-project
-intro-to-the-pieces-of-the-retina-project
+the-architecture-of-the-retina-project
 main-pieces-of-code-that-make-up-the-retina-project
 general-overview
 where-is-the-retina-vm-and-getting-there-from-gruffalo

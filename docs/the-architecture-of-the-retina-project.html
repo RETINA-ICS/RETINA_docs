@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>8 The DNDC Model | RETINA Documentation</title>
-  <meta name="description" content="8 The DNDC Model | RETINA Documentation" />
+  <title>2 The architecture of the RETINA project | RETINA Documentation</title>
+  <meta name="description" content="2 The architecture of the RETINA project | RETINA Documentation" />
   <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="8 The DNDC Model | RETINA Documentation" />
+  <meta property="og:title" content="2 The architecture of the RETINA project | RETINA Documentation" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="8 The DNDC Model | RETINA Documentation" />
+  <meta property="og:description" content="2 The architecture of the RETINA project | RETINA Documentation" />
   <meta name="github-repo" content="RETINA-ICS/ED.Hydro.Documentation" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="8 The DNDC Model | RETINA Documentation" />
+  <meta name="twitter:title" content="2 The architecture of the RETINA project | RETINA Documentation" />
   
-  <meta name="twitter:description" content="8 The DNDC Model | RETINA Documentation" />
+  <meta name="twitter:description" content="2 The architecture of the RETINA project | RETINA Documentation" />
   
 
 <meta name="author" content="Betsy Cowdery" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="walkthrough-running-a-model.html"/>
-<link rel="next" href="info-still-in-google-drive.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="general-overview.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -230,144 +230,67 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="the-dndc-model" class="section level1 hasAnchor" number="8">
-<h1><span class="header-section-number">8</span> The DNDC Model<a href="the-dndc-model.html#the-dndc-model" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This portion of the documentation that started as RETINA specific, but will now be used more generally for anyone in the group using DNDC.</p>
-<p>The goal is to document all the ways that DNDC is being used across the group, and create a repository of code and documentation for each version of the model that is being used.</p>
-<p>For now the documentation centers around the version of DNDC that has been integrated in to PEcAn, which I am calling DNDC_M or DNDC “Matthias,” the most recently developed version of the sourcecode for N-DNDC.</p>
-<div id="versions-of-dndc" class="section level2 hasAnchor" number="8.1">
-<h2><span class="header-section-number">8.1</span> Versions of DNDC<a href="the-dndc-model.html#versions-of-dndc" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Currently the RETINA group is working with the following versions of DNDC</p>
+<div id="the-architecture-of-the-retina-project" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> The architecture of the RETINA project<a href="the-architecture-of-the-retina-project.html#the-architecture-of-the-retina-project" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="images/RETINA_architecture.png" /></p>
+<div id="main-pieces-of-code-that-make-up-the-retina-project" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Main pieces of CODE that make up the RETINA project<a href="the-architecture-of-the-retina-project.html#main-pieces-of-code-that-make-up-the-retina-project" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
-<li><strong>Agro-ecosystems</strong>: Crop yield, soil carbon sequestration, nitrogen leaching, and trace gas emissions
+<li>The RETINA app
 <ul>
-<li>The DNDC Model (Version 9.5) with PC User interface
-<ul>
-<li>Interface: YES</li>
-<li>Model with interface: <a href="http://www.dndc.sr.unh.edu/model/DNDC95.zip" class="uri">http://www.dndc.sr.unh.edu/model/DNDC95.zip</a></li>
-<li>Documentation: <a href="http://www.dndc.sr.unh.edu/model/GuideDNDC95.pdf" class="uri">http://www.dndc.sr.unh.edu/model/GuideDNDC95.pdf</a></li>
-<li>Scientific Documentation: pdf provided by Ed (where is it online?)</li>
-<li>Source code available on one drive</li>
+<li>primarily php code</li>
+<li>collects the data from the user</li>
+<li>shows sensor data to the user</li>
+<li>shows model run results to the user</li>
 </ul></li>
-<li>Matthias Source Code - contians 3 versions
+<li>The RETINA database
 <ul>
-<li>DNDC “Idenways” which is the “original”
+<li>PSQL <strong>data catalogue</strong> dedicated to storing RETINA project specific information such
 <ul>
-<li>Interface: NO (running on docker)</li>
-<li>Documentation: README files included with the source code written by Matthias</li>
-<li>Source code available on one drive</li>
+<li>as user login information</li>
+<li>site details</li>
+<li>site management</li>
+<li>records of model runs triggered through the RETINA app</li>
 </ul></li>
-<li>DNDC “Matthias” &lt;– CURRENT VERSION USED BY RETINA
-<ul>
-<li>Interface: NO (running on docker)</li>
-<li>Documentation: README files included with the source code written by Matthias</li>
-<li>Source code available on one drive</li>
+<li>The data in the RETINA database is supposed to be separate from the BETY database (described below.)</li>
 </ul></li>
-<li>Working version which is a mix of the two</li>
+<li>The PECAN code
+<ul>
+<li>A bundle of R packages that handle
+<ul>
+<li>processing and preparing the data collected from the app and other sources to
+<ul>
+<li>use it as model inputs or</li>
+<li>compare with model outputs</li>
+</ul></li>
+<li>reading model outputs and preparing them for visualizations, comparison with collected data and further analysis</li>
+</ul></li>
+<li>For each model that is used in the RETINA project, there is a specific R PEcAn package that contains (at minimum)
+<ul>
+<li>script for preparing climate data for the model</li>
+<li>script(s) for preparing configuration (i.e. parameterization) files for the model</li>
+<li>script to execute the model</li>
+<li>script to read the output of the model and translate it from model specific format in to a standardized format so that it can be easily comparible with other model outputs</li>
+</ul></li>
+</ul></li>
+<li>The RETINA R package
+<ul>
+<li>A series of helper scripts written in R that are specific to the RETINA project and JHI and thus shouldn’t be merged back in with the pecan project</li>
+<li>These scripts complement the tasks listed more generally with the PECAN code.</li>
+</ul></li>
+<li>The BETY database
+<ul>
+<li>PSQL database.</li>
+<li>While BETY does house some data, it is better to think of it as a <strong>metadatabase</strong> that primarily holds information on the location and format of data</li>
+<li>The BETY database is used to track the full provinance of all data used when a model run is generated by the RETINA app including:
+<ul>
+<li>records of all raw data and processed data used for drivers, parameterization and benchmarking (for every step of processing)</li>
+<li>records of run settings and model specific parameterization for model runs</li>
+<li>records of model run status and output files</li>
 </ul></li>
 </ul></li>
 </ol>
-<ul>
-<li>Potentially another “2014” version (need to check if/how this differs)
-<ul>
-<li>Iden version before Matthias worked on it</li>
-<li>Version of DNDC may work best with Manure</li>
-<li>DNDC_source_Feb 17 2014</li>
-<li>Version shared by Jagadeesh for the project that Ed is on</li>
-</ul></li>
-<li>Is there another version that was found on github
-<ul>
-<li>The github version is what Umut is trying to get working with the manure flag…?</li>
-<li><a href="https://github.com/praxik/leaf-models-public/tree/master/DNDC">leaf-models-public/DNDC at master · praxik/leaf-models-public (github.com)</a></li>
-</ul></li>
-</ul>
-<ol style="list-style-type: decimal">
-<li><strong>Livestock Farms</strong>: Greenhouse gas and ammonia emissions
-<ul>
-<li>The Manure-DNDC Model
-<ul>
-<li>Interface: YES</li>
-<li>Model: <a href="http://www.dndc.sr.unh.edu/model/ManureDNDC.rar" class="uri">http://www.dndc.sr.unh.edu/model/ManureDNDC.rar</a></li>
-</ul></li>
-</ul></li>
-<li><strong>Forested Ecosystems</strong>: Forest production, soil carbon sequestration, and trace gas emissions
-<ul>
-<li>The Forest-DNDC Model
-<ul>
-<li>Interface: YES</li>
-<li>Model: <a href="http://www.dndc.sr.unh.edu/model/ForestDNDC.zip" class="uri">http://www.dndc.sr.unh.edu/model/ForestDNDC.zip</a></li>
-<li>Documentation: <a href="http://www.dndc.sr.unh.edu/model/ForestUserGuide.pdf" class="uri">http://www.dndc.sr.unh.edu/model/ForestUserGuide.pdf</a></li>
-</ul></li>
-</ul></li>
-</ol>
-<p>UPDATE on getting exe models running on the HPC (2-20-2024):
-- It is going to be very difficult to get an exe to run on docker on the retina VM, maybe with wine
-- We are going to reach out to the individual developers to ask if they have compiled command line versions, we could even give them examples of how we did it
-- We could also possibly discuss moving away from docker altogether
-## Github</p>
-<p><a href="https://github.com/RETINA-ICS" class="uri">https://github.com/RETINA-ICS</a></p>
-<p>The idea is to put as many versions of DNDC on to the github as possible (as private repos)
-with documentation
-and then do comparisons</p>
-<p>(Where Betsy got code from Matthias)
-<a href="https://github.com/MatthiasMimault/DNDC_CC" class="uri">https://github.com/MatthiasMimault/DNDC_CC</a></p>
-</div>
-<div id="dndc-parameters" class="section level2 hasAnchor" number="8.2">
-<h2><span class="header-section-number">8.2</span> DNDC Parameters<a href="the-dndc-model.html#dndc-parameters" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Note the documentation for DNDC is written from the perspective of using DNDC95 and DNDC_Matthias. However, even if the other versions of DNDC do not look exactly the same, the approaches to using them should be similar.</p>
-<div id="the-dndc-interface" class="section level3 hasAnchor" number="8.2.1">
-<h3><span class="header-section-number">8.2.1</span> The DNDC interface<a href="the-dndc-model.html#the-dndc-interface" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>(Difficutly: Easy)</p>
-<p>The simplest way to choose the parameters for the DNDC model is to use the interface for DNDC. After choosing one’s land type, soil type and crop type, most essential parameters will be populated with presets and it will be possible to do a preliminary run to see if the model is working. For information on using the interface to DNDC95, look at the documentation on DNDC95.</p>
-</div>
-<div id="library-parameter-files" class="section level3 hasAnchor" number="8.2.2">
-<h3><span class="header-section-number">8.2.2</span> Library Parameter Files<a href="the-dndc-model.html#library-parameter-files" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>(Difficutly: Moderate)</p>
-<p>Reading in default parameters from lookup tables based on crop id and soil type
-#### Crop Params</p>
-<div id="soil-params" class="section level4 hasAnchor" number="8.2.2.1">
-<h4><span class="header-section-number">8.2.2.1</span> Soil Params<a href="the-dndc-model.html#soil-params" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-</div>
-<div id="params" class="section level4 hasAnchor" number="8.2.2.2">
-<h4><span class="header-section-number">8.2.2.2</span> ? Params<a href="the-dndc-model.html#params" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-</div>
-</div>
-<div id="the-dndc-source-file" class="section level3 hasAnchor" number="8.2.3">
-<h3><span class="header-section-number">8.2.3</span> The DNDC Source file<a href="the-dndc-model.html#the-dndc-source-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>(Difficutly: Advanced)</p>
-</div>
-</div>
-<div id="the-dnd-file" class="section level2 hasAnchor" number="8.3">
-<h2><span class="header-section-number">8.3</span> The dnd file<a href="the-dndc-model.html#the-dnd-file" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="role-of-the-file" class="section level3 hasAnchor" number="8.3.1">
-<h3><span class="header-section-number">8.3.1</span> Role of the file<a href="the-dndc-model.html#role-of-the-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-</div>
-<div id="how-to-create-a-dnd-file" class="section level3 hasAnchor" number="8.3.2">
-<h3><span class="header-section-number">8.3.2</span> How to create a dnd file<a href="the-dndc-model.html#how-to-create-a-dnd-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="with-the-dndc-interface" class="section level4 hasAnchor" number="8.3.2.1">
-<h4><span class="header-section-number">8.3.2.1</span> With the DNDC interface<a href="the-dndc-model.html#with-the-dndc-interface" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-</div>
-<div id="by-hand" class="section level4 hasAnchor" number="8.3.2.2">
-<h4><span class="header-section-number">8.3.2.2</span> By hand<a href="the-dndc-model.html#by-hand" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-</div>
-<div id="using-pecan-and-the-retina-app" class="section level4 hasAnchor" number="8.3.2.3">
-<h4><span class="header-section-number">8.3.2.3</span> Using PEcAn and the RETINA app<a href="the-dndc-model.html#using-pecan-and-the-retina-app" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<hr />
-<div id="pre-made-dnd-files-for-the-retina-project" class="section level5 hasAnchor" number="8.3.2.3.1">
-<h5><span class="header-section-number">8.3.2.3.1</span> Pre-made dnd files for the RETINA Project<a href="the-dndc-model.html#pre-made-dnd-files-for-the-retina-project" class="anchor-section" aria-label="Anchor link to header"></a></h5>
-<div id="balruddery-conventional-treatment" class="section level6 hasAnchor" number="8.3.2.3.1.1">
-<h6><span class="header-section-number">8.3.2.3.1.1</span> Balruddery: Conventional Treatment<a href="the-dndc-model.html#balruddery-conventional-treatment" class="anchor-section" aria-label="Anchor link to header"></a></h6>
-</div>
-<div id="balruddery-sustainable-treatment" class="section level6 hasAnchor" number="8.3.2.3.1.2">
-<h6><span class="header-section-number">8.3.2.3.1.2</span> Balruddery: Sustainable Treatment<a href="the-dndc-model.html#balruddery-sustainable-treatment" class="anchor-section" aria-label="Anchor link to header"></a></h6>
-</div>
-<div id="glensaugh" class="section level6 hasAnchor" number="8.3.2.3.1.3">
-<h6><span class="header-section-number">8.3.2.3.1.3</span> Glensaugh<a href="the-dndc-model.html#glensaugh" class="anchor-section" aria-label="Anchor link to header"></a></h6>
 
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
             </section>
@@ -375,8 +298,8 @@ and then do comparisons</p>
           </div>
         </div>
       </div>
-<a href="walkthrough-running-a-model.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="info-still-in-google-drive.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="general-overview.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

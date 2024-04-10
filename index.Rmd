@@ -11,6 +11,20 @@ url: https\://RETINA-ICS.github.io/RETINA_docs/
 description: "RETINA Documentation"
 ---
 
-# Github 
+# Introduction to RETINA
 
-This documentation can be found on [github](https://github.com/RETINA-ICS/RETINA_docs.github.io)
+**Dynamic monitoring, reporting and verification for implementing negative emission strategies in managed ecosystems (RETINA)**
+
+![](images/RETINA_architecture_2.png)
+
+## What is the RETINA project
+
+Goals:
+
+- Bring together biogeochemical models and MRV system to improve predictions of soil C, N and GHG emissions in agricultural systems.
+
+- Inform landowners when making management decisions.
+
+
+
+
