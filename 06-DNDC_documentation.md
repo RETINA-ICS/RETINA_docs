@@ -1,6 +1,3 @@
----
-title: DNDC Documentation
----
 # The DNDC Model
 
 This portion of the documentation that started as RETINA specific, but will now be used more generally for anyone in the group using DNDC. 

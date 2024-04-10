@@ -1,6 +1,3 @@
----
-title: Walkthrough the full RETINA workflow
----
 
 # Running the model 
 

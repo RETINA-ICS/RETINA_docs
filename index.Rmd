@@ -8,7 +8,7 @@ output:
   bookdown::gitbook: default
 github-repo: RETINA-ICS/ED.Hydro.Documentation
 url: https\://RETINA-ICS.github.io/RETINA_docs/
-description: "ED Hydro Documentation"
+description: "RETINA Documentation"
 ---
 
 This documentation can be found on [github](https://github.com/RETINA-ICS/RETINA_docs.github.io)
