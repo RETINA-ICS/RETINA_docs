@@ -9,16 +9,16 @@
 
 
 
-![[introduction-to-docker-4-638 1.webp]]
+![](images/introduction-to-docker-4-638.png)
 
 
-![[Pasted image 20240222134606.jpg]]
+![](images/20240222134606.jpg)
 
 Remake with our logos like pecan and rstudio
-![[Pasted image 20240222135119.png]]
+![](images/20240222135119.png)
 
 
-![[Pasted image 20240222134008.png]]
+![](images/20240222134008.png)
 
 
 ## The app side
