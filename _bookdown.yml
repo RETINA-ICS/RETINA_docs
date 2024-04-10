@@ -5,15 +5,15 @@ output_dir: docs
 rmd_files: [
   "index.Rmd",
   "01-RETINA_intro.md",
-  "02-The Retina VM, Docker and where to find the code.md",
+  "02-Docker.md",
   "03-pecan.md",
-  "04-04-RETINA_package.md",
+  "04-RETINA_package.md",
   "05-walkthrough.md",
   "06-DNDC_documentation.md",
-  "07-Testing the workflow.md",
-  "08-Google Docs.md",
-  "Meeting Notes.md", 
-  "RETINA-exe possible solutions.md"
+  "07-Testing_the_workflow.md",
+  "08-Google_Docs.md",
+  "Meeting_Notes.md", 
+  "RETINA_exe.md"
   ]
 clean: [packages.bib, bookdown.bbl]
 new_session: no

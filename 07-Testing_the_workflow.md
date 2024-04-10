@@ -36,8 +36,7 @@ Look at logs and errors
 <https://retina.hutton.ac.uk/retinaApp_activity_RunModel_Android_v1_1.php?getKey=CQHXu2H4S31dXt9VqWXd&userName=retinaTesting@hutton.ac.uk&userPass=kjasdf83AJNCTO039AA&toid=osgb1000002019663779>
 ```
 
-https://retina.hutton.ac.uk/
-retinaApp_activity_RunModel_Android_v1_1.php
-?getKey=CQHXu2H4S31dXt9VqWXd&userName=retinaTesting@hutton.ac.uk&userPass=kjasdf83AJNCTO039AA
-&
+[retinaApp_activity_RunModel_Android_v1_1.php](https://retina.hutton.ac.uk/
+retinaApp_activity_RunModel_Android_v1_1.php?getKey=CQHXu2H4S31dXt9VqWXd&userName=retinaTesting@hutton.ac.uk&userPass=kjasdf83AJNCTO039AA)
+\&
 toid=osgb1000002019663779
