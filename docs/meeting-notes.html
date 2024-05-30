@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>12 Meeting Notes | RETINA Documentation</title>
   <meta name="description" content="12 Meeting Notes | RETINA Documentation" />
-  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
   <meta property="og:title" content="12 Meeting Notes | RETINA Documentation" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Betsy Cowdery" />
 
 
-<meta name="date" content="2024-04-10" />
+<meta name="date" content="2024-05-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="info-in-google-drive.html"/>
-<link rel="next" href="notes-on-ongoing-dndc-solutions-and-the-hpc.html"/>
+<link rel="next" href="plotting-visualizations.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -184,12 +184,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html"><i class="fa fa-check"></i><b>7</b> Walkthrough running a model</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#initializing-a-run"><i class="fa fa-check"></i><b>7.1</b> Initializing a run</a>
+<li class="chapter" data-level="7.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#initializing-a-run"><i class="fa fa-check"></i><b>7.1</b> Initializing a run</a></li>
+<li class="chapter" data-level="7.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#via-a-web-browser"><i class="fa fa-check"></i><b>7.2</b> Via a web browser</a></li>
+<li class="chapter" data-level="7.3" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#visualizations-for-app"><i class="fa fa-check"></i><b>7.3</b> Visualizations for app:</a></li>
+<li class="chapter" data-level="7.4" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#more-about-outputs"><i class="fa fa-check"></i><b>7.4</b> More about outputs</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#server-side-scripts"><i class="fa fa-check"></i><b>7.1.1</b> Server Side Scripts</a></li>
-<li class="chapter" data-level="7.1.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#retina-side-scripts"><i class="fa fa-check"></i><b>7.1.2</b> Retina side scripts</a></li>
+<li class="chapter" data-level="7.4.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#server-side-scripts"><i class="fa fa-check"></i><b>7.4.1</b> Server Side Scripts</a></li>
+<li class="chapter" data-level="7.4.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#retina-side-scripts"><i class="fa fa-check"></i><b>7.4.2</b> Retina side scripts</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#outputs"><i class="fa fa-check"></i><b>7.2</b> Outputs</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="restarting-docker.html"><a href="restarting-docker.html"><i class="fa fa-check"></i><b>8</b> Restarting Docker</a></li>
 <li class="chapter" data-level="9" data-path="logs-and-errors.html"><a href="logs-and-errors.html"><i class="fa fa-check"></i><b>9</b> Logs and Errors</a></li>
@@ -214,7 +216,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.2" data-path="info-in-google-drive.html"><a href="info-in-google-drive.html#spreadsheets"><i class="fa fa-check"></i><b>11.2</b> Spreadsheets</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="meeting-notes.html"><a href="meeting-notes.html"><i class="fa fa-check"></i><b>12</b> Meeting Notes</a></li>
-<li class="chapter" data-level="13" data-path="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><a href="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><i class="fa fa-check"></i><b>13</b> Notes on ongoing DNDC solutions and the HPC</a></li>
+<li class="chapter" data-level="13" data-path="plotting-visualizations.html"><a href="plotting-visualizations.html"><i class="fa fa-check"></i><b>13</b> Plotting Visualizations</a></li>
+<li class="chapter" data-level="14" data-path="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><a href="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><i class="fa fa-check"></i><b>14</b> Notes on ongoing DNDC solutions and the HPC</a></li>
 </ul>
 
       </nav>
@@ -256,7 +259,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>ssh -L 8000:localhost:8000 -J <a href="mailto:ecowdery@gruffalo.cropdiversity.ac.uk" class="email">ecowdery@gruffalo.cropdiversity.ac.uk</a> <a href="mailto:ecowdery@retina" class="email">ecowdery@retina</a>
 ssh -L 8000:retina:8000 <a href="mailto:ejones@gruffalo.cropdiversity.ac.uk" class="email">ejones@gruffalo.cropdiversity.ac.uk</a></p>
 <p>ssh -L 8000:localhost:8000 -J <a href="mailto:ejones@gruffalo.cropdiversity.ac.uk" class="email">ejones@gruffalo.cropdiversity.ac.uk</a> <a href="mailto:ejones@retina" class="email">ejones@retina</a></p>
-
+<p>Notes from 23/5/24</p>
+<ul>
+<li>Check out samba</li>
+<li>Once you have samba just paste this:
+<ul>
+<li>DNDC code is in <code>\\narnia.cropdiversity.ac.uk\shared\projects\joint\202012_RETINA\pecan\docker\models\dndc</code></li>
+</ul></li>
+<li>Check out the RETINA code
+<ul>
+<li><code>\\narnia.cropdiversity.ac.uk\shared\projects\joint\202012_RETINA\pecan\volumes\pecan\pecan\RETINA</code>
+<ul>
+<li>plot_wf_RETINA_func</li>
+<li></li>
+</ul></li>
+</ul></li>
+</ul>
 </div>
             </section>
 
@@ -264,7 +282,7 @@ ssh -L 8000:retina:8000 <a href="mailto:ejones@gruffalo.cropdiversity.ac.uk" cla
         </div>
       </div>
 <a href="info-in-google-drive.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="notes-on-ongoing-dndc-solutions-and-the-hpc.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="plotting-visualizations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -16,6 +16,8 @@ the-rstudio-server-docker-container
 the-bety-database-docker-container
 the-model-docker-containers
 dndc
+dndc-build-files-on-the-docker-container
+dndc-build-files-on-the-hpc
 basgra
 ecosse
 the-scary-diagram.
@@ -30,9 +32,11 @@ soil-api-related
 sitecoordinate-related
 walkthrough-running-a-model
 initializing-a-run
+via-a-web-browser
+visualizations-for-app
+more-about-outputs
 server-side-scripts
 retina-side-scripts
-outputs
 restarting-docker
 logs-and-errors
 the-dndc-model
@@ -57,4 +61,5 @@ info-in-google-drive
 documents
 spreadsheets
 meeting-notes
+plotting-visualizations
 notes-on-ongoing-dndc-solutions-and-the-hpc

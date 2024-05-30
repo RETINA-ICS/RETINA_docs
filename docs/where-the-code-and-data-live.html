@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Where the code and data live | RETINA Documentation</title>
   <meta name="description" content="3 Where the code and data live | RETINA Documentation" />
-  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Where the code and data live | RETINA Documentation" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Betsy Cowdery" />
 
 
-<meta name="date" content="2024-04-10" />
+<meta name="date" content="2024-05-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -184,12 +184,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html"><i class="fa fa-check"></i><b>7</b> Walkthrough running a model</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#initializing-a-run"><i class="fa fa-check"></i><b>7.1</b> Initializing a run</a>
+<li class="chapter" data-level="7.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#initializing-a-run"><i class="fa fa-check"></i><b>7.1</b> Initializing a run</a></li>
+<li class="chapter" data-level="7.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#via-a-web-browser"><i class="fa fa-check"></i><b>7.2</b> Via a web browser</a></li>
+<li class="chapter" data-level="7.3" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#visualizations-for-app"><i class="fa fa-check"></i><b>7.3</b> Visualizations for app:</a></li>
+<li class="chapter" data-level="7.4" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#more-about-outputs"><i class="fa fa-check"></i><b>7.4</b> More about outputs</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#server-side-scripts"><i class="fa fa-check"></i><b>7.1.1</b> Server Side Scripts</a></li>
-<li class="chapter" data-level="7.1.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#retina-side-scripts"><i class="fa fa-check"></i><b>7.1.2</b> Retina side scripts</a></li>
+<li class="chapter" data-level="7.4.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#server-side-scripts"><i class="fa fa-check"></i><b>7.4.1</b> Server Side Scripts</a></li>
+<li class="chapter" data-level="7.4.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#retina-side-scripts"><i class="fa fa-check"></i><b>7.4.2</b> Retina side scripts</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#outputs"><i class="fa fa-check"></i><b>7.2</b> Outputs</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="restarting-docker.html"><a href="restarting-docker.html"><i class="fa fa-check"></i><b>8</b> Restarting Docker</a></li>
 <li class="chapter" data-level="9" data-path="logs-and-errors.html"><a href="logs-and-errors.html"><i class="fa fa-check"></i><b>9</b> Logs and Errors</a></li>
@@ -214,7 +216,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.2" data-path="info-in-google-drive.html"><a href="info-in-google-drive.html#spreadsheets"><i class="fa fa-check"></i><b>11.2</b> Spreadsheets</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="meeting-notes.html"><a href="meeting-notes.html"><i class="fa fa-check"></i><b>12</b> Meeting Notes</a></li>
-<li class="chapter" data-level="13" data-path="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><a href="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><i class="fa fa-check"></i><b>13</b> Notes on ongoing DNDC solutions and the HPC</a></li>
+<li class="chapter" data-level="13" data-path="plotting-visualizations.html"><a href="plotting-visualizations.html"><i class="fa fa-check"></i><b>13</b> Plotting Visualizations</a></li>
+<li class="chapter" data-level="14" data-path="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><a href="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><i class="fa fa-check"></i><b>14</b> Notes on ongoing DNDC solutions and the HPC</a></li>
 </ul>
 
       </nav>
@@ -293,6 +296,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>ESPECIALLY REBUILDING DNDC!</p>
 <div id="dndc" class="section level3 hasAnchor" number="3.10.1">
 <h3><span class="header-section-number">3.10.1</span> DNDC<a href="where-the-code-and-data-live.html#dndc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="dndc-build-files-on-the-docker-container" class="section level4 hasAnchor" number="3.10.1.1">
+<h4><span class="header-section-number">3.10.1.1</span> DNDC build files on the docker container<a href="where-the-code-and-data-live.html#dndc-build-files-on-the-docker-container" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>More detail coming soon - essentially, the DNDC docker is built using a Dockerfile which is found here:</p>
+<p><code>\shared\projects\joint\202012_RETINA\pecan\docker\models\dndc\Dockerfile</code></p>
+<p>this file tells how the container will be built, with what libraries, and what will be installed.</p>
+<p>There is a line in the dockerfile</p>
+<pre><code>COPY dndc_build     /src/dndc_build</code></pre>
+<p>this copies the dndc_build folder that is in the SAME DIRECTORY as the dockerfile in to the docker container</p>
+<p>So if you want to rebuild the dockerfile with a different source code, you need to copy a new dndc_build folder into</p>
+<p><code>\shared\projects\joint\202012_RETINA\pecan\docker\models\dndc\</code></p>
+<p>and rebuild the docker. Or instead of copying it, symlink it. Which is I think what we were doing.</p>
+<p>So which builds of DNDC would you use to replace what’s being used on the docker container at the moment?</p>
+</div>
+<div id="dndc-build-files-on-the-hpc" class="section level4 hasAnchor" number="3.10.1.2">
+<h4><span class="header-section-number">3.10.1.2</span> DNDC build files on the HPC<a href="where-the-code-and-data-live.html#dndc-build-files-on-the-hpc" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>There are multiple builds of DNDC (versions of the code) that can be used on the HPC and docker.</p>
+<p>There is a difference between builds that can run on the HPC and builds that can run on docker because the LIBRARIES are different. You can see this in the cmake files.</p>
+<p>They are all stored in
+<code>\\narnia.cropdiversity.ac.uk\shared\projects\joint\202012_RETINA\pecan\volumes\pecan\pecan</code></p>
+<p>Right now you can see</p>
+<ul>
+<li>dndc_build (the original build of DNDC) - this works ONLY on the docker</li>
+<li>dndc_build_new (a build where David Cameron and I were experimenting to see if we could get DNDC to run on the HPC - I don’t think we need it.)</li>
+<li>dndc_build_M (a build where I was experimenting with M’s flags) - this works ONLY on the docker</li>
+<li>dndc_buld_M_local (this build compiles and runs on the HPC ie it has a different cmake setup)</li>
+</ul>
+<p>Note: if you are running DNDC on the HPC - you can just run it in the command line, but this will make Iain mad. Better to submit to the queue.</p>
+<p>The general idea for development is clunky (we never found a good solution)
+- Build a “local” version of DNDC and test it by running it on the HPC
+- This won’t use the app at all, but there are ways to continue to use code to help automate the model development process
+- Once you have a version of the model that is suitable to move over to use with the app, copy over the DNDC source files to the other dndc_build_M folder (which can’t be compiled here because it points to other libraries) but then go through a series of steps to move the new version of the model over to docker and rebuild there. (Notes on that coming soon and/or they should be in the documentation somewhere already … )</p>
+</div>
 </div>
 <div id="basgra" class="section level3 hasAnchor" number="3.10.2">
 <h3><span class="header-section-number">3.10.2</span> BASGRA<a href="where-the-code-and-data-live.html#basgra" class="anchor-section" aria-label="Anchor link to header"></a></h3>

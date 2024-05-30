@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7 Walkthrough running a model | RETINA Documentation</title>
   <meta name="description" content="7 Walkthrough running a model | RETINA Documentation" />
-  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7 Walkthrough running a model | RETINA Documentation" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Betsy Cowdery" />
 
 
-<meta name="date" content="2024-04-10" />
+<meta name="date" content="2024-05-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -184,12 +184,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html"><i class="fa fa-check"></i><b>7</b> Walkthrough running a model</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#initializing-a-run"><i class="fa fa-check"></i><b>7.1</b> Initializing a run</a>
+<li class="chapter" data-level="7.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#initializing-a-run"><i class="fa fa-check"></i><b>7.1</b> Initializing a run</a></li>
+<li class="chapter" data-level="7.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#via-a-web-browser"><i class="fa fa-check"></i><b>7.2</b> Via a web browser</a></li>
+<li class="chapter" data-level="7.3" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#visualizations-for-app"><i class="fa fa-check"></i><b>7.3</b> Visualizations for app:</a></li>
+<li class="chapter" data-level="7.4" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#more-about-outputs"><i class="fa fa-check"></i><b>7.4</b> More about outputs</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#server-side-scripts"><i class="fa fa-check"></i><b>7.1.1</b> Server Side Scripts</a></li>
-<li class="chapter" data-level="7.1.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#retina-side-scripts"><i class="fa fa-check"></i><b>7.1.2</b> Retina side scripts</a></li>
+<li class="chapter" data-level="7.4.1" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#server-side-scripts"><i class="fa fa-check"></i><b>7.4.1</b> Server Side Scripts</a></li>
+<li class="chapter" data-level="7.4.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#retina-side-scripts"><i class="fa fa-check"></i><b>7.4.2</b> Retina side scripts</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="walkthrough-running-a-model.html"><a href="walkthrough-running-a-model.html#outputs"><i class="fa fa-check"></i><b>7.2</b> Outputs</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="restarting-docker.html"><a href="restarting-docker.html"><i class="fa fa-check"></i><b>8</b> Restarting Docker</a></li>
 <li class="chapter" data-level="9" data-path="logs-and-errors.html"><a href="logs-and-errors.html"><i class="fa fa-check"></i><b>9</b> Logs and Errors</a></li>
@@ -214,7 +216,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.2" data-path="info-in-google-drive.html"><a href="info-in-google-drive.html#spreadsheets"><i class="fa fa-check"></i><b>11.2</b> Spreadsheets</a></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="meeting-notes.html"><a href="meeting-notes.html"><i class="fa fa-check"></i><b>12</b> Meeting Notes</a></li>
-<li class="chapter" data-level="13" data-path="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><a href="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><i class="fa fa-check"></i><b>13</b> Notes on ongoing DNDC solutions and the HPC</a></li>
+<li class="chapter" data-level="13" data-path="plotting-visualizations.html"><a href="plotting-visualizations.html"><i class="fa fa-check"></i><b>13</b> Plotting Visualizations</a></li>
+<li class="chapter" data-level="14" data-path="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><a href="notes-on-ongoing-dndc-solutions-and-the-hpc.html"><i class="fa fa-check"></i><b>14</b> Notes on ongoing DNDC solutions and the HPC</a></li>
 </ul>
 
       </nav>
@@ -236,19 +239,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">7</span> Walkthrough running a model<a href="walkthrough-running-a-model.html#walkthrough-running-a-model" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="initializing-a-run" class="section level2 hasAnchor" number="7.1">
 <h2><span class="header-section-number">7.1</span> Initializing a run<a href="walkthrough-running-a-model.html#initializing-a-run" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="server-side-scripts" class="section level3 hasAnchor" number="7.1.1">
-<h3><span class="header-section-number">7.1.1</span> Server Side Scripts<a href="walkthrough-running-a-model.html#server-side-scripts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>setupPECAN.R</p>
-<p>submitPECAN.R</p>
 </div>
-<div id="retina-side-scripts" class="section level3 hasAnchor" number="7.1.2">
-<h3><span class="header-section-number">7.1.2</span> Retina side scripts<a href="walkthrough-running-a-model.html#retina-side-scripts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="via-a-web-browser" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Via a web browser<a href="walkthrough-running-a-model.html#via-a-web-browser" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If you just want to test that the workflow is working - but you can’t change inputs because you don’t have access to the app interface or the code</p>
+<p>You can paste the following link in any (?) web browser</p>
+<p>Version 1.1 (this will change if David updates the code)</p>
+<p><a href="https://retina.hutton.ac.uk/retinaApp_activity_RunModel_Android_v1_1.php?getKey=CQHXu2H4S31dXt9VqWXd&amp;userName=retinaTesting@hutton.ac.uk&amp;userPass=kjasdf83AJNCTO039AA&amp;toid=osgb1000000175422042">retina.hutton.ac.uk/retinaApp_activity_RunModel_Android_v1_1.php?getKey=CQHXu2H4S31dXt9VqWXd&amp;userName=retinaTesting@hutton.ac.uk&amp;userPass=kjasdf83AJNCTO039AA&amp;toid=osgb1000000175422042</a></p>
+<p>the pieces of this link:
+- the domain: retina.hutton.ac.uk
+- the php script retina <code>App_activity_RunModel_Android_v1_1.php</code> which can be found in <code>\mnt\shared\projects\joint\202012_RETINA\retina.hutton.ac.uk\html</code>
+- all the php scripts for the app are in this directory and very well documented - they are all written by David D. please ask before making any changes.
+- toid = osgb1000000175422042
+- the site identifier: in this case, this is a site we have set up for testing model runs that is next to Balruddery. We call it TOID2
+- DON’T TEST WITH TOIDS WE HAVEN’T SET UP YET
+- This starts a process that hangs (and we can’t seem to kill) and we will need to restart the docker.</p>
+<p>Once you click the link, you will get a message that you have a run ID:</p>
+<p>“Your activity has been recorded in the RETINA project database. A model has been run with Run ID: #####”</p>
+<p>This number is the RETINA RUN ID
+- Every time a request for a model run (or series of model runs) is sent from the app, it gets a retina run id.
+- If and only if this request is successful, the id is logged in the retina database</p>
+<p>This is different than the PECAN run ID
+- Every time a model is run, it is given a run id through PEcAn.
+- Even if the model is not successful, it will still be recorded in the BETY database.</p>
+<p>One RETINA RUN ID can be associated with many PECAN RUN ids</p>
+<p>But you can get both of these from the log files in <code>\\narnia.cropdiversity.ac.uk\shared\projects\joint\202012_RETINA\retina.hutton.ac.uk\html\logs</code></p>
+<ul>
+<li><code>rscript_results_log_DATE</code></li>
+<li><code>rscript_error_log_DATE</code></li>
+</ul>
+<p>The log files also point to model output directories :
+<code>/mnt/shared/projects/joint/202012_RETINA/pecan/volumes/pecan/pecan/workflows/PECAN_PECANID</code></p>
 </div>
+<div id="visualizations-for-app" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Visualizations for app:<a href="walkthrough-running-a-model.html#visualizations-for-app" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><code>\mnt\shared\projects\joint\202012_RETINA\pecan\volumes\pecan\pecan\dbfiles\input_app\html</code></p>
+<p>The folder name is determined by the RETINA run id and a randomly generated id for security</p>
 </div>
-<div id="outputs" class="section level2 hasAnchor" number="7.2">
-<h2><span class="header-section-number">7.2</span> Outputs<a href="walkthrough-running-a-model.html#outputs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="more-about-outputs" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> More about outputs<a href="walkthrough-running-a-model.html#more-about-outputs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>All model output is stored in the directory
-<code>/mnt/shared/projects/joint/202012_RETINA/pecan/volumes/pecan/pecan/workflows</code> in the directory associated with its bety database workflow id. This can be found in the retina database and is associatedwith the retina run id.</p>
+<code>/mnt/shared/projects/joint/202012_RETINA/pecan/volumes/pecan/pecan/workflows</code> in the directory associated with its bety database workflow id. This can be found in the retina database and is associated with the retina run id.</p>
 <p>Look at the retina run table:
 - If the run completed, the run will have a “finished at” date and a record for “out folder” this folder contians the output visulaizations, not the data itself however.
 - To see the actual data, use the retina_run_id to find the bety workflow_id in the pecan_model_runs table. Again, if the run didn’t complete, this record won’t exist.
@@ -267,7 +298,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Following this example of workflow 99000001015, inside this directory there is an out folder and then another layer of subdirectories. This is because the system has the potential to do ensemble runs. Then there would be multiple directories, each containing the output from a unique model run. As we are not running ensembles right now, there is only one sub directory.</p>
 <p><code>PEcAn_99000001015/out/99000000889/</code></p>
 <p>This is where you will find the output of the run, for a single model and site. The output is separated in to annual files and is in netcdf format.</p>
+<div id="server-side-scripts" class="section level3 hasAnchor" number="7.4.1">
+<h3><span class="header-section-number">7.4.1</span> Server Side Scripts<a href="walkthrough-running-a-model.html#server-side-scripts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Coming soon</p>
+<p>setupPECAN.R</p>
+<p>submitPECAN.R</p>
+</div>
+<div id="retina-side-scripts" class="section level3 hasAnchor" number="7.4.2">
+<h3><span class="header-section-number">7.4.2</span> Retina side scripts<a href="walkthrough-running-a-model.html#retina-side-scripts" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Coming soon</p>
 
+</div>
 </div>
 </div>
             </section>
