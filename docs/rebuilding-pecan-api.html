@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>RETINA Documentation</title>
-  <meta name="description" content="RETINA Documentation" />
+  <title>10 Rebuilding pecan API | RETINA Documentation</title>
+  <meta name="description" content="10 Rebuilding pecan API | RETINA Documentation" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="RETINA Documentation" />
+  <meta property="og:title" content="10 Rebuilding pecan API | RETINA Documentation" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="RETINA Documentation" />
+  <meta property="og:description" content="10 Rebuilding pecan API | RETINA Documentation" />
   <meta name="github-repo" content="RETINA-ICS/ED.Hydro.Documentation" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="RETINA Documentation" />
+  <meta name="twitter:title" content="10 Rebuilding pecan API | RETINA Documentation" />
   
-  <meta name="twitter:description" content="RETINA Documentation" />
+  <meta name="twitter:description" content="10 Rebuilding pecan API | RETINA Documentation" />
   
 
 <meta name="author" content="Betsy Cowdery" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="the-architecture-of-the-retina-project.html"/>
+<link rel="prev" href="logs-and-errors.html"/>
+<link rel="next" href="the-dndc-model.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -236,21 +236,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">RETINA Documentation</h1>
-<p class="author"><em>Betsy Cowdery</em></p>
-<p class="date"><em>2024-11-07</em></p>
-</div>
-<div id="introduction-to-retina" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">1</span> Introduction to RETINA<a href="index.html#introduction-to-retina" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><strong>Dynamic monitoring, reporting and verification for implementing negative emission strategies in managed ecosystems (RETINA)</strong></p>
-<p><img src="images/RETINA_architecture_2.png" />
-## What is the RETINA project</p>
-<p>Goals:</p>
-<ul>
-<li><p>Bring together biogeochemical models and MRV system to improve predictions of soil C, N and GHG emissions in agricultural systems.</p></li>
-<li><p>Inform landowners when making management decisions.</p></li>
-</ul>
+<div id="rebuilding-pecan-api" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">10</span> Rebuilding pecan API<a href="rebuilding-pecan-api.html#rebuilding-pecan-api" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>If you ever make changes to any of the pecan API functions,
+rebuilding pecan and bringing docker down and up won’t be enough
+for those changes to show.</p>
+<p>You need to rebuild the pecan API docker.</p>
+<p>Steps:</p>
+<p>After logging in to gruffalo and retina,</p>
+<p>go to the docker directory</p>
+<p><code>cd /mnt/shared/projects/joint/202012_RETINA/pecan/docker/</code></p>
+<p>always check to make sure that you’re in the right docker folder
+with something like <code>docker compose ps</code> which will list
+all the running containers.
+If they don’t look familiar, you’re in the wrong place and you’re about
+to shut down the wrong docker. Turn back!</p>
+<p>When you’re ready, bring docker down</p>
+<p><code>docker compose down</code></p>
+<p>Then MOVE TO A NEW DOCKER DIRECTORY: the pecan api docker directory</p>
+<p>this is where you will rebuild the API docker</p>
+<p><code>cd apps/api</code></p>
+<p><code>docker build -t pecan/api:develop .</code></p>
+<p>When this has completed MOVE DIRECTORIES AGAIN
+back to the pecan docker directory</p>
+<p>either with <code>cd ../..</code>
+or write out the full path again
+<code>cd /mnt/shared/projects/joint/202012_RETINA/pecan/docker/</code></p>
+<p>Bring docker up</p>
+<p><code>docker compose up -d</code></p>
+<p>Give it a minute for everything to start.
+But you might need bring docker up twice because API has some trouble starting.</p>
+<p>List all the running containers</p>
+<p><code>docker compose ps</code></p>
+<p>and check to see that <code>pecan/api:develop</code> is up and running and
+that it has just been updated!</p>
 
 </div>
             </section>
@@ -258,8 +277,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-
-<a href="the-architecture-of-the-retina-project.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="logs-and-errors.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-dndc-model.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

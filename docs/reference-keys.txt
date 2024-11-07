@@ -39,6 +39,7 @@ server-side-scripts
 retina-side-scripts
 restarting-docker
 logs-and-errors
+rebuilding-pecan-api
 the-dndc-model
 versions-of-dndc
 dndc-parameters
