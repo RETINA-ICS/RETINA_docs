@@ -1,0 +1,136 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Page-1" id="o_z6orNAlU5ch8WAJZIp">
+    <mxGraphModel dx="5956" dy="3308" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-1" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Server&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=18;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="50" y="40" width="420" height="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-3" value="&lt;b&gt;submitPECAN&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-1">
+          <mxGeometry x="40" y="60" width="350" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-4" value="submitworkflow" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-3">
+          <mxGeometry y="30" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-5" value="check model worked" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-3">
+          <mxGeometry y="60" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-6" value="&lt;b&gt;plot_retina&lt;/b&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-3">
+          <mxGeometry y="90" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="aZiZh2Uj4_sIr9knH3fA-1" source="aZiZh2Uj4_sIr9knH3fA-6" target="aZiZh2Uj4_sIr9knH3fA-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="aZiZh2Uj4_sIr9knH3fA-1" source="aZiZh2Uj4_sIr9knH3fA-29" target="aZiZh2Uj4_sIr9knH3fA-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="185" y="762" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-29" value="&lt;div style=&quot;text-align: left; font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;plot_rds_retina&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-1">
+          <mxGeometry x="40" y="699" width="350" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-30" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;- goes and looks for the data that was created&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-29">
+          <mxGeometry y="30" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-31" value="- makes the plots on the server side so they have the &lt;b style=&quot;font-size: 18px;&quot;&gt;&lt;u style=&quot;font-size: 18px;&quot;&gt;right permissions&lt;/u&gt;&lt;/b&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-29">
+          <mxGeometry y="80" width="350" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-38" value="plots!&lt;div style=&quot;font-size: 18px;&quot;&gt;FINALLY&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-1">
+          <mxGeometry x="155" y="914" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-57" value="&lt;div style=&quot;text-align: left; font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;plot_retina&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-1">
+          <mxGeometry x="30" y="245" width="350" height="240" as="geometry">
+            <mxRectangle x="860" y="860" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-58" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; font-size: 18px;&quot;&gt;API call to retina&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-57">
+          <mxGeometry y="30" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-60" value="&lt;span style=&quot;text-align: center; font-size: 18px;&quot;&gt;- sends the workflow_id&amp;nbsp;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-57">
+          <mxGeometry y="60" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-61" value="- expects back a list of file paths of the plot data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-57">
+          <mxGeometry y="90" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-63" value="- API call should look like:&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;text-align: center; font-size: 18px;&quot;&gt;http://api:8000/api/retina/?workflow_id=...&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-57">
+          <mxGeometry y="140" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-2" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Retina&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=18;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="520" y="40" width="420" height="950" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="aZiZh2Uj4_sIr9knH3fA-2" source="aZiZh2Uj4_sIr9knH3fA-11" target="aZiZh2Uj4_sIr9knH3fA-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-11" value="&lt;b&gt;retina.R&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/b&gt;pecan/apps/api/R/" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-2">
+          <mxGeometry x="35" y="160" width="350" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-12" value="contains all finctions called by the API that contacts retina" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-11">
+          <mxGeometry y="60" width="350" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-69" value="&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;plotRETINA&lt;/b&gt;(workflow_id){&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;RETINA::prepare_plot_RETINA(&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;retina_run_full = workflow_id)&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Courier New&quot; style=&quot;font-size: 18px;&quot;&gt;}&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-11">
+          <mxGeometry y="140" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-21" value="&lt;b style=&quot;text-align: left; font-size: 18px;&quot;&gt;prepare_plot_RETINA.R&amp;nbsp;&lt;/b&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;data/RETINA/R&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-2">
+          <mxGeometry x="35" y="430" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-22" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;- read output prepare for plotting&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-21">
+          <mxGeometry y="60" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-23" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;- saves the &quot;plot ready data&quot;&amp;nbsp; in an RDS file in the workflow folder&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-21">
+          <mxGeometry y="110" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-24" value="- returns the paths to the data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-21">
+          <mxGeometry y="160" width="350" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-26" value="plot data" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-2">
+          <mxGeometry x="150" y="669" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="aZiZh2Uj4_sIr9knH3fA-2" source="aZiZh2Uj4_sIr9knH3fA-21" target="aZiZh2Uj4_sIr9knH3fA-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.4;entryDx=0;entryDy=0;fontSize=18;entryPerimeter=0;" edge="1" parent="1" source="aZiZh2Uj4_sIr9knH3fA-61" target="aZiZh2Uj4_sIr9knH3fA-69">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="230" as="targetPoint" />
+            <mxPoint x="290" y="435" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontSize=18;" edge="1" parent="1" source="aZiZh2Uj4_sIr9knH3fA-30" target="aZiZh2Uj4_sIr9knH3fA-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1.007;entryY=0.352;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=18;" edge="1" parent="1" source="aZiZh2Uj4_sIr9knH3fA-26" target="aZiZh2Uj4_sIr9knH3fA-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-39" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;If you want to test plots separately&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fontSize=18;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="40" width="620" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-44" value="&lt;b style=&quot;text-align: left; font-size: 18px;&quot;&gt;plot_wf_RETINA_func.R&amp;nbsp;&lt;/b&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;data/RETINA/R&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-39">
+          <mxGeometry x="35" y="50" width="550" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-45" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;- read output prepare for plotting&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-44">
+          <mxGeometry y="60" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-46" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;- saves the &quot;plot ready data&quot;&amp;nbsp; in an RDS file in the workflow folder&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-44">
+          <mxGeometry y="90" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-47" value="- returns the actual plots" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-44">
+          <mxGeometry y="120" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-50" value="&lt;div style=&quot;text-align: left; font-size: 18px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;Open the RDS files in the workflow directories directly&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-39">
+          <mxGeometry x="35" y="430" width="550" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-51" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;readRDS(file)&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-50">
+          <mxGeometry y="30" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-80" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Load in the data&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 18px;&quot;&gt;&lt;b&gt;with a different set of workflow IDs or variables&lt;/b&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-39">
+          <mxGeometry x="35" y="230" width="550" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="aZiZh2Uj4_sIr9knH3fA-81" value="&lt;div style=&quot;text-align: center; text-wrap: nowrap;&quot;&gt;&amp;nbsp;combined_soil &amp;lt;- RETINA::load_combined_soil_data(args,&lt;/div&gt;&lt;div style=&quot;text-align: center; text-wrap: nowrap;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;save = TRUE,&lt;/div&gt;&lt;div style=&quot;text-align: center; text-wrap: nowrap;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;overwrite = FALSE,&lt;/div&gt;&lt;div style=&quot;text-align: center; text-wrap: nowrap;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;return_data = TRUE)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=18;" vertex="1" parent="aZiZh2Uj4_sIr9knH3fA-80">
+          <mxGeometry y="60" width="550" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

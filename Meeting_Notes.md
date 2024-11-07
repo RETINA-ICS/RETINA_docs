@@ -21,11 +21,15 @@
 Portforwarding from Iain:
 
 ssh -L 8000:localhost:8000 -J ecowdery@gruffalo.cropdiversity.ac.uk ecowdery@retina
-ssh -L 8000:retina:8000 ejones@gruffalo.cropdiversity.ac.uk
+
 
 
 ssh -L 8000:localhost:8000 -J ejones@gruffalo.cropdiversity.ac.uk ejones@retina
 
+
+
+
+ssh -L 8000:retina:8000 ejones@gruffalo.cropdiversity.ac.uk
 
 Notes from 23/5/24
 
